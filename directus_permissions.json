@@ -1,0 +1,158 @@
+{
+    "data": [
+        {
+            "id": 3,
+            "collection": "applications",
+            "action": "read",
+            "permissions": {
+                "_and": [
+                    {
+                        "application_stakeholders": {
+                            "userId": {
+                                "_eq": "$CURRENT_USER"
+                            }
+                        }
+                    }
+                ]
+            },
+            "validation": null,
+            "presets": null,
+            "fields": [
+                "*"
+            ],
+            "policy": "e2c0d1bc-1cc7-47f6-be83-ee78e2db4030"
+        },
+        {
+            "id": 4,
+            "collection": "question_groups",
+            "action": "read",
+            "permissions": null,
+            "validation": null,
+            "presets": null,
+            "fields": [
+                "*"
+            ],
+            "policy": "e2c0d1bc-1cc7-47f6-be83-ee78e2db4030"
+        },
+        {
+            "id": 6,
+            "collection": "survey_responses",
+            "action": "read",
+            "permissions": null,
+            "validation": null,
+            "presets": null,
+            "fields": [
+                "*"
+            ],
+            "policy": "e2c0d1bc-1cc7-47f6-be83-ee78e2db4030"
+        },
+        {
+            "id": 7,
+            "collection": "surveys",
+            "action": "read",
+            "permissions": null,
+            "validation": null,
+            "presets": null,
+            "fields": [
+                "*"
+            ],
+            "policy": "e2c0d1bc-1cc7-47f6-be83-ee78e2db4030"
+        },
+        {
+            "id": 8,
+            "collection": "survey_responses",
+            "action": "update",
+            "permissions": null,
+            "validation": null,
+            "presets": null,
+            "fields": [
+                "*"
+            ],
+            "policy": "e2c0d1bc-1cc7-47f6-be83-ee78e2db4030"
+        },
+        {
+            "id": 9,
+            "collection": "survey_responses",
+            "action": "create",
+            "permissions": null,
+            "validation": null,
+            "presets": null,
+            "fields": [
+                "*"
+            ],
+            "policy": "e2c0d1bc-1cc7-47f6-be83-ee78e2db4030"
+        },
+        {
+            "id": 11,
+            "collection": "directus_users",
+            "action": "read",
+            "permissions": null,
+            "validation": null,
+            "presets": null,
+            "fields": [
+                "role",
+                "id",
+                "email",
+                "first_name",
+                "last_name",
+                "title",
+                "tags",
+                "stakeholder"
+            ],
+            "policy": "e2c0d1bc-1cc7-47f6-be83-ee78e2db4030"
+        },
+        {
+            "id": 12,
+            "collection": "applications",
+            "action": "update",
+            "permissions": null,
+            "validation": null,
+            "presets": null,
+            "fields": [
+                "applicationDescription",
+                "applicationDepartment",
+                "businessUnit",
+                "businessOwner",
+                "itOwner",
+                "engineeringOwner"
+            ],
+            "policy": "e2c0d1bc-1cc7-47f6-be83-ee78e2db4030"
+        },
+        {
+            "id": 18,
+            "collection": "application_stakeholders",
+            "action": "read",
+            "permissions": null,
+            "validation": null,
+            "presets": null,
+            "fields": [
+                "*"
+            ],
+            "policy": "e2c0d1bc-1cc7-47f6-be83-ee78e2db4030"
+        },
+        {
+            "id": 19,
+            "collection": "directus_users",
+            "action": "update",
+            "permissions": null,
+            "validation": null,
+            "presets": null,
+            "fields": [
+                "stakeholder"
+            ],
+            "policy": "e2c0d1bc-1cc7-47f6-be83-ee78e2db4030"
+        },
+        {
+            "id": 20,
+            "collection": "questions",
+            "action": "read",
+            "permissions": null,
+            "validation": null,
+            "presets": null,
+            "fields": [
+                "*"
+            ],
+            "policy": "e2c0d1bc-1cc7-47f6-be83-ee78e2db4030"
+        }
+]
+}
