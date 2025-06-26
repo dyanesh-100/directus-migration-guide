@@ -65,11 +65,20 @@ Authorization: Bearer <ADMIN_TOKEN>
 
 ```json
 {
-  "name": "Stakeholder",
-  "description": "App Stakeholder Role",
-  "admin_access": false,
-  "app_access": true
+  "data": [
+    {
+      "id": "2f24211d-d928-469a-aea3-3c8f53d4e426",
+      "name": "Administrator",
+      "icon": "verified_user",
+      "description": "Admins have access to all managed data within the system by default",
+      "children": [],
+      "policies": [],
+      "users": []
+    }
+  ],
+  "meta": {}
 }
+
 ```
 
 ✅ Record the **new role IDs** for mapping later.
@@ -90,13 +99,30 @@ Authorization: Bearer <ADMIN_TOKEN>
 
 ```json
 {
-  "name": "Read Surveys",
-  "description": "...",
-  "admin_access": false,
-  "app_access": true,
-  "roles": ["new-role-id"],
-  "permissions": ["permission-id-1","permission-id-2"]
+  "data": [
+    {
+      "id": "22640672-eef0-4ee9-ab04-591f3afb288",
+      "name": "Admin",
+      "icon": "supervised_user_circle",
+      "description": null,
+      "ip_access": null,
+      "enforce_tfa": false,
+      "admin_access": true,
+      "app_access": true,
+      "users": [
+        "0bc7b36a-9ba9-4ce0-83f0-0a526f354e07"
+      ],
+      "roles": [
+        "8b4474c0-288d-4bb8-b62e-8330646bb6aa"
+      ],
+      "permissions": [
+        "5c74c86f-cab0-4b14-a3c4-cd4f2363e826"
+      ]
+    }
+  ],
+  "meta": {}
 }
+
 ```
 
 ✅ Map `roles` and `permissions` arrays to new IDs.
@@ -195,12 +221,18 @@ Authorization: Bearer <ADMIN_TOKEN>
 
 ```json
 {
-  "role": "new-role-id",
-  "collection": "surveys",
-  "action": "read",
-  "permissions": {
-    "_and": [{ "status": { "_eq": "active" } }]
-  }
+  "data": [
+    {
+      "id": 1,
+      "collection": "customers",
+      "action": "create",
+      "permissions": {},
+      "validation": {},
+      "presets": {},
+      "fields": []
+    }
+  ],
+  "meta": {}
 }
 ```
 
