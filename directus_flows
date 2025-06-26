@@ -1,0 +1,15 @@
+ {
+            "name": "Map user to stakeholder apps",
+            "status": "active",
+            "trigger": "event",
+            "accountability": "all",
+            "options": {
+                "type": "action",
+                "scope": [
+                    "items.create"
+                ],
+                "collections": [
+                    "directus_users"
+                ]
+            }
+        }
