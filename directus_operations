@@ -1,0 +1,25 @@
+{
+            
+            "name": "Update matching stakeholders",
+            "key": "update_matching_stakeholders",
+            "type": "item-update",
+            "position_x": 19,
+            "position_y": 1,
+            "options": {
+                "collection": "application_stakeholders",
+                "query": {
+                    "filter": {
+                        "email": {
+                            "_eq": "{{ $trigger.payload.email }}"
+                        }
+                    }
+                },
+                "payload": {
+                    "userId": "{{ $trigger.key }}"
+                },
+                "permissions": "$full"
+            },
+            
+            "flow": "44a6fefc-b18b-4678-91e9-86fa6c70210e"
+        
+        }
