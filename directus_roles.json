@@ -1,0 +1,35 @@
+{
+    "data": [
+        {
+            "id": "2f0727be-af3d-46f3-b576-0077ef74770b",
+            "name": "consultant",
+            "icon": "supervised_user_circle",
+            "description": null,
+            "parent": null,
+            "children": [],
+            "policies": [
+                "e43112b9-d84a-4d95-94b8-66e58be41104"
+            ],
+            "users": [
+                "0fcd54db-18e8-4f7a-9e1d-107b03d12c94",
+                "35006faf-b964-4506-b0df-bfda5bc9a53b",
+                "3a745614-4424-41fe-a752-53b7404e3716",
+                "3c2f2ed2-8279-4c91-bd7a-96ee267ea78f"
+            ]
+        },
+        {
+            "id": "d1c8c9c4-b3d3-419f-bbdb-bdf571d2619f",
+            "name": "Administrator",
+            "icon": "verified",
+            "description": "$t:admin_description",
+            "parent": null,
+            "children": [],
+            "policies": [
+                "6e9a0140-e138-48ba-ac40-8fb721ed93da"
+            ],
+            "users": [
+                "fc95ef4d-f628-490c-bc6a-a8d94fad5778"
+            ]
+        }
+    ]
+}
