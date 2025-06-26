@@ -2,6 +2,7 @@
 
 This guide enables you to migrate your Directus project schema, roles, policies, permissions, flows, and operations from an old instance to a new one using only API calls (Postman or any REST client). All request bodies reference JSON files in this repository—edit them as needed before running each step.
 
+If any Doubt refer the official Directus docs: https://directus.io/docs/api
 ---
 
 ## 📁 Repository Structure
