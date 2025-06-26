@@ -1,0 +1,71 @@
+{
+    "data": [
+        {
+            "id": "169d5787-e0dd-4657-a7e9-166bde4c7d12",
+            "name": "Administrator",
+            "icon": "verified",
+            "description": "$t:admin_description",
+            "ip_access": null,
+            "enforce_tfa": false,
+            "admin_access": true,
+            "app_access": true,
+            "permissions": [],
+            "users": [
+                "6e9a0140-e138-48ba-ac40-8fb721ed93da",
+                "0db87e62-c4cd-4cc7-acca-7fee555c51e3",
+                "199c2999-80ec-4066-b1a0-ef71e10b69f7"
+            ],
+            "roles": [
+                "6e9a0140-e138-48ba-ac40-8fb721ed93da",
+                "0db87e62-c4cd-4cc7-acca-7fee555c51e3",
+                "199c2999-80ec-4066-b1a0-ef71e10b69f7"
+            ]
+        },
+        {
+            "id": "abf8a154-5b1c-4a46-ac9c-7300570f4f17",
+            "name": "$t:public_label",
+            "icon": "public",
+            "description": "$t:public_description",
+            "ip_access": null,
+            "enforce_tfa": false,
+            "admin_access": true,
+            "app_access": true,
+            "permissions": [],
+            "users": [
+                "c8344042-862f-4a7c-b3eb-9352d666ffd7"
+            ],
+            "roles": [
+                "c8344042-862f-4a7c-b3eb-9352d666ffd7"
+            ]
+        },
+        {
+            "id": "e2c0d1bc-1cc7-47f6-be83-ee78e2db4030",
+            "name": "consultant_pol",
+            "icon": "badge",
+            "description": null,
+            "ip_access": null,
+            "enforce_tfa": false,
+            "admin_access": false,
+            "app_access": false,
+            "permissions": [
+                3,
+                4,
+                6,
+                7,
+                8,
+                9,
+                11,
+                12,
+                18,
+                19,
+                20
+            ],
+            "users": [
+                "e43112b9-d84a-4d95-94b8-66e58be41104"
+            ],
+            "roles": [
+                "e43112b9-d84a-4d95-94b8-66e58be41104"
+            ]
+        }
+    ]
+}
